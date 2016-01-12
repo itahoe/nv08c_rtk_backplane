@@ -26,8 +26,8 @@ typedef	enum nmea_nsid_s
 typedef	enum nmea_fix_s
 {
 	NMEA_FIX_NONE           =   0,
-	NMEA_FIX_2D             =   1,
-	NMEA_FIX_3D             =   2,
+	NMEA_FIX_SPS            =   1, //Standard Positioning Service
+	NMEA_FIX_PPS            =   2, //Precise Positioning Service
 	NMEA_FIX_RTK_INT        =   3,
 	NMEA_FIX_RTK_FLT        =   4,
 } nmea_fix_t;

@@ -47,8 +47,8 @@ bool nmea_recv_gga(                         nmea_t *            nmea,
 	switch( atoi( str ) )
 	{
 		case 0:     nmea->gga.fix       =   NMEA_FIX_NONE;          break;
-		case 1:     nmea->gga.fix       =   NMEA_FIX_2D;            break;
-		case 2:     nmea->gga.fix       =   NMEA_FIX_3D;            break;
+		case 1:     nmea->gga.fix       =   NMEA_FIX_SPS;           break;
+		case 2:     nmea->gga.fix       =   NMEA_FIX_PPS;           break;
 		case 3:     nmea->gga.fix       =   NMEA_FIX_RTK_INT;       break;
 		case 4:     nmea->gga.fix       =   NMEA_FIX_RTK_FLT;       break;
 		default:                                                    break;

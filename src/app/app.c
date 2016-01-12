@@ -155,13 +155,13 @@ int	main( void )
 					ui_led_set( led_0, UI_LED_MODE_ON );
 					break;
 
-				case NMEA_FIX_3D:
+				case NMEA_FIX_PPS:
 					ui_led_set( led_2, UI_LED_MODE_OFF );
 					ui_led_set( led_1, UI_LED_MODE_ON );
 					ui_led_set( led_0, UI_LED_MODE_OFF );
 					break;
 
-				case NMEA_FIX_2D:
+				case NMEA_FIX_SPS:
 					ui_led_set( led_2, UI_LED_MODE_OFF );
 					ui_led_set( led_1, UI_LED_MODE_OFF );
 					ui_led_set( led_0, UI_LED_MODE_ON );
